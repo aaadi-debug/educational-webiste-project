@@ -1,0 +1,85 @@
+<div class="explore__courses">
+    <div class="lined__bg">
+        <div class="page-amount text-center font-extrabold mb-5 animation fade-in-up" >
+            26+
+        </div>
+        <h2 class="page-title font-semibold text-center text-2xl mb-3.75 fade-in-up" >
+            Premium Demos
+        </h2>
+        <p class="page-subtitle text-center mb-10 fade-in-up" >
+            Easy to install and customize your websites with Drag &amp; Drop Builder.
+        </p>
+    </div>
+    <div class="container course__tabs">
+        <div class="container tab__buttons">
+            <button class="tablink" onclick="openPage('Home', this, 'yellow')">Home</button>
+            <button class="tablink" onclick="openPage('News', this, 'cyan')">News</button>
+            <button class="tablink" onclick="openPage('Contact', this, 'orange')" id="defaultOpen">Contact</button>
+            <button class="tablink" onclick="openPage('About', this, 'rgb(255, 0, 64)')">About</button>
+        </div>
+
+        <div id="Home" class="tabcontent">
+            <div class="row">
+                <a href="" class="courses__page__jump__icon">See all <i class="fa-solid fa-angle-right"></i></a>
+                
+                {{>courses date="June 28, 2022" title="GE Premils 2022 (Online/Offline)" }}
+                {{>courses date="August 2, 2022" title="GS Mains Test Series 2022 (Online/Offline)" }}
+                {{>courses date="August 2, 2022" title="GS Mains Test Series 2022 (Online/Offline)" }}
+                {{>courses date="August 2, 2022" title="GS Mains Test Series 2022 (Online/Offline)" }}
+            </div>
+        </div>
+
+        <div id="News" class="tabcontent">
+            <div class="row">
+                <a href="" class="courses__page__jump__icon">See all <i class="fa-solid fa-angle-right"></i></a>
+                
+                {{>courses date="June 28, 2022" title="GE Premils 2022 (Online/Offline)" }}
+                {{>courses date="August 2, 2022" title="GS Mains Test Series 2022 (Online/Offline)" }}
+                {{>courses date="August 2, 2022" title="GS Mains Test Series 2022 (Online/Offline)" }}
+                {{>courses date="August 2, 2022" title="GS Mains Test Series 2022 (Online/Offline)" }}
+            </div>
+        </div>
+
+        <div id="Contact" class="tabcontent">
+            <div class="row">
+                <a href="" class="courses__page__jump__icon">See all <i class="fa-solid fa-angle-right"></i></a>
+                
+                {{>courses date="June 28, 2022" title="GE Premils 2022 (Online/Offline)" }}
+                {{>courses date="August 2, 2022" title="GS Mains Test Series 2022 (Online/Offline)" }}
+                {{>courses date="August 2, 2022" title="GS Mains Test Series 2022 (Online/Offline)" }}
+                {{>courses date="August 2, 2022" title="GS Mains Test Series 2022 (Online/Offline)" }}
+            </div>
+        </div>
+
+        <div id="About" class="tabcontent">
+            <div class="row">
+                <a href="" class="courses__page__jump__icon">See all <i class="fa-solid fa-angle-right"></i></a>
+                
+                {{>courses date="June 28, 2022" title="GE Premils 2022 (Online/Offline)" }}
+                {{>courses date="August 2, 2022" title="GS Mains Test Series 2022 (Online/Offline)" }}
+                {{>courses date="August 2, 2022" title="GS Mains Test Series 2022 (Online/Offline)" }}
+                {{>courses date="August 2, 2022" title="GS Mains Test Series 2022 (Online/Offline)" }}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>

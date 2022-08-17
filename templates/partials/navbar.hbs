@@ -1,0 +1,62 @@
+    <nav>
+        <div class="navbar navbar-fixed-top" id="navbar">
+            <div class="nav-brand"><h2><i class="fa-solid fa-graduation-cap"></i> Quiclearn</h2></div>
+            <div class="ul-content">
+              <ul>
+                <li class="nav-item px-5">
+                      <a href="#" class="nav-link nav__category">Categories <i class="fa-solid fa-angle-down"></i></a>
+                      {{>course_menu}}
+                </li>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="🔍 Search for any course" aria-label="Search">
+                  {{!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> --}}
+                </form>
+                <li><a href=""><i class="nav-icon fa-solid fa-heart"></i></a></li>
+
+                <li><a href=""><i class="nav-icon fa-solid fa-cart-shopping"></i></a></li>
+
+                <li><a href=""><i class="nav-icon fa-solid fa-bell"></i></a></li>
+
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">My Learning</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link login">Get Started &nbsp; <i class="fa-solid fa-arrow-right" ></i></a>
+                  </li>
+                                
+              </ul>
+            </div>
+        </div>
+        <div class="hamburger-icon navbar-fixed-top">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    
+
+    <script>
+        $(document).ready(function() {
+            $('.login').mouseover(function() {
+                $('.fa-arrow-right').show(300);
+            });
+            $('.login').mouseleave(function() {
+                $('.fa-arrow-right').hide(300);
+            });
+            $('.hamburger-icon').click(function() {
+                $('.ul-content').toggle(1000);
+            });
+            if($(window).width() <= 768){
+            // do your stuff
+                $('.nav-link').click(function() {
+                    $('.ul-content').hide(1000);
+                });
+            }
+
+            
+        });
+    </script>
+    
+    
+    
+    

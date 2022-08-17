@@ -1,0 +1,74 @@
+<div class="quic_logo">
+    <div class="logo__img">
+        <img src="https://eduma.thimpress.com/wp-content/themes/eduma-landingpage/images/bg/eduma-system-1.png" alt="quic-logo">
+    </div>
+</div>
+
+<div class="container quic__content">
+    <h2 class="text-center">#1 Learning Management System Plugin</h2>
+    <p class="quic__p">Eduma | Education WordPress Theme uses LearnPress, the #1 WP LMS Plugin on WordPress.org, which offers you a lot of benefits, such as:
+        easy to update, independent from the theme, easy to change, create & sell courses online.</p>
+
+    <div class="quic__overview">
+        <div class="quic__box active__courses">
+            <h1>100K+</h1>
+            <p>Active Courses</p>
+        </div>
+        <div class="quic__box avg__ratings">
+            <h1>4.8</h1>
+            <p>Average Ratings</p>
+        </div>
+        <div class="quic__box lp__addons">
+            <h1>30+</h1>
+            <p>LearnPress Add-ons</p>
+        </div>
+    </div>
+
+    <div class="nav-brand proud"><h2>Proud of <i class="fa-solid fa-graduation-cap"></i> Quiclearn</h2></div>
+
+    <div class="row my-5">
+        <div class="col-md-3">
+        {{>rankers img_src="https://cdn.testbook.com/images/production/selection/wof/Ram Balaji.jpg" ranker_name="Ram Balaji" ranker_rank="AIR 1 | GATE EC 2022"}}    
+        </div>
+        <div class="col-md-3">
+        {{>rankers img_src="https://cdn.testbook.com/images/production/selection/wof/Himali%20Saini.jpg" ranker_name="Himali Saini" ranker_rank="AIR 10 | GATE CS 2022"}}    
+        </div>
+        <div class="col-md-3">
+        {{>rankers img_src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg-ycwtoO9reZXD4W6oQMpp6upMa20W1QrMQ&usqp=CAU" ranker_name="Onkar Yewale" ranker_rank="AIR 20 | GATE ME 2022"}}    
+        </div>
+        <div class="col-md-3">
+        {{>rankers img_src="https://cdn.testbook.com/images/production/selection/wof/Kuldeep%20Patidar.jpg" ranker_name="Kuldeep Patidar" ranker_rank="AIR 24 | GATE IN 2022"}}    
+        </div>
+    </div> 
+    <div class="row my-5 show__rankers">
+        <div class="col-md-3">
+        {{>rankers img_src="https://cdn.testbook.com/images/production/selection/wof/Ram Balaji.jpg" ranker_name="Ram Balaji" ranker_rank="AIR 1 | GATE EC 2022"}}    
+        {{>rankers img_src="https://cdn.testbook.com/images/production/selection/wof/Ram Balaji.jpg" ranker_name="Ram Balaji" ranker_rank="AIR 1 | GATE EC 2022"}}    
+        </div>
+        <div class="col-md-3">
+        {{>rankers img_src="https://cdn.testbook.com/images/production/selection/wof/Himali%20Saini.jpg" ranker_name="Himali Saini" ranker_rank="AIR 10 | GATE CS 2022"}}    
+        {{>rankers img_src="https://cdn.testbook.com/images/production/selection/wof/Himali%20Saini.jpg" ranker_name="Himali Saini" ranker_rank="AIR 10 | GATE CS 2022"}}    
+        </div>
+        <div class="col-md-3">
+        {{>rankers img_src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg-ycwtoO9reZXD4W6oQMpp6upMa20W1QrMQ&usqp=CAU" ranker_name="Onkar Yewale" ranker_rank="AIR 20 | GATE ME 2022"}}    
+        {{>rankers img_src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg-ycwtoO9reZXD4W6oQMpp6upMa20W1QrMQ&usqp=CAU" ranker_name="Onkar Yewale" ranker_rank="AIR 20 | GATE ME 2022"}}    
+        </div>
+        <div class="col-md-3">
+        {{>rankers img_src="https://cdn.testbook.com/images/production/selection/wof/Kuldeep%20Patidar.jpg" ranker_name="Kuldeep Patidar" ranker_rank="AIR 24 | GATE IN 2022"}}    
+        {{>rankers img_src="https://cdn.testbook.com/images/production/selection/wof/Kuldeep%20Patidar.jpg" ranker_name="Kuldeep Patidar" ranker_rank="AIR 24 | GATE IN 2022"}}    
+        </div>
+    </div>  
+    <div class="show__more">
+        <button type="submit"><a href="">Show More <i class="fa-solid fa-angle-down"></i></a></button>
+    </div>
+</div>
+
+
+
+<script>
+    $(document).ready(function() {
+        $('.show__more button').mouseover(function() {
+            $('.show__rankers').show(1000);
+        });       
+    });
+</script>

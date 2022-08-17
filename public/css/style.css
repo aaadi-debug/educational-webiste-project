@@ -1,0 +1,849 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --primary-clr: #a3bcb6;
+    --secondary-clr: #3c403d;
+    --light-clr: #daded4;
+    --white-clr: #fff;
+    --green-clr: #39603d;
+}
+
+body{
+   background: var(--light-clr) !important;
+   /* background-size: 100%;
+   background-repeat: no-repeat;
+   background-attachment: fixed; */
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ul-content {
+    padding-top: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+}
+ul li .login {
+    border: 1px solid var(--secondary-clr);
+    padding: 4px 22px;
+    border-radius: 30px;
+}
+ul li .login:hover {
+    background: var(--secondary-clr);
+    color: var(--white-clr);
+}
+ul li .login i {
+    display: none;
+}
+ul li .login:hover i {
+    color: var(--white-clr);
+}
+
+ul li a {
+    text-decoration: none !important;
+    margin: 0 20px;
+    color: var(--secondary-clr);
+    transition: 0.7s ease;
+}
+
+ul li a:hover {
+    color: #000;
+}
+
+.nav-icon {
+    font-size: 18px;
+}
+.nav-link {
+    font-size: 16px;
+}
+
+.hamburger-icon {
+    display: block;
+    /* border: 1px solid #000; */
+    display: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.hamburger-icon span {
+    display: block;
+    width: 20px;
+    border: 1px solid #000;
+    margin: 4px 5px;
+}
+
+/* -----------------course-menu-styling------------------- */
+
+.sub__menu__1 {
+    display: none;
+    background-color: var(--white-clr);
+    border-radius: 10px;
+}
+
+.ul-content ul li:hover .sub__menu__1 {
+    display: block;
+    position: absolute;
+    margin-left: -15px;
+}
+
+.ul-content ul li:hover .sub__menu__1 ul {
+    display: block;
+    margin: 10px 20px 10px 0;
+}
+
+.ul-content ul li:hover .sub__menu__1 ul li {
+    /* border-bottom: 1px dotted #000; */
+    padding: 10px;
+    display: block;
+    text-align: left !important;
+    background: transparent;
+}
+
+.ul-content ul li:hover .sub__menu__1 ul li:last-child {
+    border-bottom: none;
+}
+
+.ul-content ul li:hover .sub__menu__1 ul li:hover {
+    border-bottom: 1px dotted #000;
+    background: var(--light-clr);
+    border-radius: 10px;
+}
+
+/* ------------------------------------------------------- */
+
+/* -----------------hero-section-styling------------------- */
+
+.h__content {
+    margin-top: 250px;
+    padding: 20px 0px;
+    background: rgba(255, 255, 255, 0.727);
+    box-shadow: 4px 4px 12px 4px #ececec;
+}
+
+.h__content p {
+    font-size: 16px;
+}
+
+.hero__section {
+    height: 100vh;
+    background-image: url('https://eduma.thimpress.com/wp-content/themes/eduma-landingpage/images/synthetic/eduma-header-right.png'),
+    url('https://eduma.thimpress.com/wp-content/themes/eduma-landingpage/images/synthetic/eduma-header-left.png');
+    /* background-size: contain; */
+    background-position: right bottom, left bottom;
+    background-repeat: no-repeat, no-repeat;
+    /* background-attachment: fixed; */
+}
+
+.banner {
+    background: var(--white-clr);
+    padding: 10px 6px;
+    border-radius: 10px;
+    /* position: absolute;
+    top: 500px; */
+    margin-top: -74px;
+}
+
+.banner__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 30px;
+    /* border: 1px solid #000; */
+}
+
+.banner__box i {
+    font-size: 24px;
+    margin-right: 16px;
+    padding: 12px 10px;
+    border-radius: 10px;
+}
+
+.banner__content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border: 1px solid #000; */
+}
+
+.banner__content h4, p{
+    /* border: 1px solid #000; */
+    margin: 0;
+    line-height: 14px;
+}
+
+.trusted__box {
+    /* margin-left: 6px; */
+    background: #E4FEEF;
+}
+
+.trusted__box i{
+    font-size: 28px;
+    color: var(--white-clr);
+    background: #43CC7C;
+    padding: 16px;
+    border-radius: 51% 49% 50% 50% / 33% 33% 67% 67%;
+}
+
+.fa-trophy {
+    background: #FFFAE5;
+    color: #FAC24B;
+}
+
+.fa-list-check {
+    background: #F3F0FF;
+    color: #845EF7;
+}
+
+.fa-table-list {
+    background: #FFF2EB;
+    color: #FF8747;
+}
+/* ------------------------------------------------------- */
+
+/* ----------------- explore - courses ------------------- */
+
+.explore__courses {
+    background: var(--white-clr);
+    margin-top: -65px;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.lined__bg {
+    background: url(https://eduma.thimpress.com/wp-content/themes/eduma-landingpage/images/bg/eduma-dotted-line.png)
+     repeat-x center -180px;
+} 
+
+
+.page-amount {
+    /* visibility: visible;  */
+    /* animation-delay: 0.3s;  */
+    /* animation-name: fadeInUp; */
+    font-size: 100px;
+    font-weight: 800;
+    background: -webkit-linear-gradient(1deg,#ffc701 40.17%,#fe37c6 57.57%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-title {
+    visibility: visible; 
+    animation-delay: 0.3s; 
+    /* animation-name: fadeInUp; */
+}
+
+.page-subtitle {
+    visibility: visible; 
+    animation-delay: 0.3s; 
+    /* animation-name: fadeInUp; */
+}
+
+.course__tabs {
+    margin: 60px 0;
+}
+
+.tab__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: var(--primary-clr);
+  color: var(--secondary-clr);
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 14px;
+  margin: 20px 26px;
+  font-size: 14px;
+  width: 16%;
+}
+
+.tablink:hover {
+    transition: 0.3s;
+    background: var(--light-clr);
+    border: 2px solid var(--secondary-clr);
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    background: var(--white-clr);
+    color: #000;
+    display: none;
+    padding: 20px 20px 50px 20px;
+}
+
+.card {
+    background: rgb(244, 244, 244);
+    width: 250px;
+    border-left: 5px solid yellow;
+    margin: 10px;
+}
+
+.card p {
+    font-size: 12px;
+    color: var(--primary-clr);
+}
+
+.card .card-link {
+    text-decoration: none;
+    text-align: center;
+}
+
+.courses__page__jump__icon {
+    text-decoration: none;    
+}
+
+.courses__page__jump__icon:hover {
+    color: var(--green-clr);
+    
+}
+
+.course__tabs #News .card{
+    border-left: 5px solid cyan;
+}
+
+.course__tabs #Contact .card{
+    border-left: 5px solid orange;
+}
+
+.course__tabs #About .card{
+    border-left: 5px solid rgb(255, 0, 64);
+}
+
+/* https://eduma.thimpress.com/wp-content/themes/eduma-landingpage/images/bg/eduma-system-6.png */
+
+/* https://eduma.thimpress.com/wp-content/themes/eduma-landingpage/images/bg/eduma-system-5.png */
+
+/* https://eduma.thimpress.com/wp-content/themes/eduma-landingpage/images/bg/eduma-system-7.png */
+
+/* https://drive.google.com/file/d/160l27uqBzSQG8sc8nVfFlddJzCEMyCrW/view?usp=sharing */
+
+/* #6548B9  #8865D1 */
+
+
+/* ------------------ quic-styling ----------------------- */
+.logo__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -120px auto 0 auto;
+}
+
+
+.logo__img img {
+    background: var(--white-clr);
+    padding: 50px;
+    box-shadow: 5px 15px 50px rgb(0 0 0 / 5%);
+    border-radius: 50px;
+}
+
+.quic__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.quic__p {
+    line-height: 1.7;
+    text-align: center;
+}
+
+.quic__overview {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.quic__box {
+    height: 260px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-clr);
+    margin: 80px 30px;
+}
+.quic__box h1 {
+    font-weight: 750;
+    font-size: 40px;
+}
+.active__courses {
+    background: url(https://eduma.thimpress.com/wp-content/themes/eduma-landingpage/images/bg/eduma-system-5.png);
+    background-repeat: no-repeat;
+}
+.avg__ratings {
+    background: url(https://eduma.thimpress.com/wp-content/themes/eduma-landingpage/images/bg/eduma-system-6.png);
+    background-repeat: no-repeat;
+}
+.lp__addons {
+    background: url(https://eduma.thimpress.com/wp-content/themes/eduma-landingpage/images/bg/eduma-system-7.png);
+    background-repeat: no-repeat;
+}
+/* ------------------------------------------------------- */
+
+
+
+
+/* ------------------ person-styling --------------------- */
+.person__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--white-clr);
+    padding: 20px 30px;
+    box-shadow: 0 0 10px 0 #ececec;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.show__rankers .person__details {
+    margin: 40px 0;
+}
+
+.person__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    /* border: 1px solid red; */
+}
+.person__name {
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: 10px;
+}
+.person__rank {
+    /* border: 1px solid red; */
+    text-align: center;
+    width: 200px;
+    margin-top: 10px;
+    color: var(--primary-clr);
+    font-weight: 600;
+}
+
+.card__profile[_ngcontent-serverApp-c69] {
+    z-index: 13;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+.card__profile[_ngcontent-serverApp-c69] img[_ngcontent-serverApp-c69] {
+    height: 96px;
+    min-width: 96px;
+    max-width: 96px;
+    border-radius: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+}
+
+.card__profile[_ngcontent-serverApp-c69] img[_ngcontent-serverApp-c69]:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #f6f8f9;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.card__profile[_ngcontent-serverApp-c69]:after {
+    content: "";
+    position: absolute;
+    background: url(https://testbook.com/assets/img/selections/fame-circle.svg);
+    height: 78px;
+    width: 180px;
+    top: -5px;
+    left: -40px;
+    z-index: 100;
+    background-size: cover;
+}
+
+.show__more button {
+    border: none;
+    outline: none;
+    background: none;
+    margin-bottom: 60px;
+}
+
+.show__rankers {
+    display: none;
+}
+
+/* ------------------------------------------------------- */
+
+/* ------------------ app-styling ------------------------ */
+.white__bg__get__app {
+    background: var(--white-clr);
+    padding: 50px 0;
+}
+
+.get__the__app {
+    background: var(--primary-clr);
+    border-radius: 16px;
+    margin: 80px auto;
+    /* max-height: 200px; */
+}
+
+.app__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.app__content h2 {
+    font-size: 32px;
+    margin-left: 40px;
+}
+.app__content h6 {
+    font-size: 16px;
+}
+.app__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.app__buttons button {
+    margin: 10px 40px;
+    padding: 8px;
+    width: 300px;
+    border-radius: 4px;
+    background: transparent;
+}
+.app__buttons .app__get__started:hover {
+    background: var(--secondary-clr);
+    color: var(--white-clr);
+}
+.app__buttons .app__download {
+    background: #000;
+    color: var(--white-clr);
+}
+.app__buttons .app__download:hover {
+    background: var(--secondary-clr);
+}
+
+/* ------------------------------------------------------- */
+
+
+/* ---------------- footer-styling ----------------------- */
+.footer {
+    margin: 80px auto 40px auto !important;
+}
+.footer hr {
+    border: 1px solid #5c5c5c;
+    width: 16%;
+}
+.footer__left{
+    /* border: 1px solid #000; */
+    padding-right: 80px !important;
+}
+.footer__logo {
+    margin-bottom: 40px;
+}
+.footer__logo p {
+    line-height: 1.4;
+    color: #5c5c5c;
+    margin-top: 20px !important;
+}
+.footer__call {
+    margin-top: 40px;
+}
+.footer__call h4 {
+    font-weight: 600;
+}
+.footer__call p {
+    margin-bottom: 20px;
+    color: #727272;
+}
+
+.footer__right{
+    /* border: 1px solid #000; */
+    padding-left: 100px !important;
+}
+.footer__right .footer__boxes {
+    display: flex;
+    float: left;
+    /* border: 1px solid #000; */
+    flex-direction: column;
+}
+.footer__right ol {
+    display: flex;
+    /* border: 1px solid #000; */
+    flex-direction: column;
+    list-style-type: none;
+}
+.footer__boxes {
+    margin: 20px;
+    width: 170px;
+}
+.footer__boxes h5 {
+    font-weight: 600;
+    padding-left: 20px;
+}
+ol li {
+    margin: 4px 0;
+    color: #5c5c5c;
+}
+
+.main__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #c1c1c1;
+    padding: 30px 10px 0 0;
+    color: #5c5c5c;
+}
+.social__media__links i {
+    margin: 0 10px;
+    color: #5c5c5c;
+}
+.social__media__links i:hover {
+    background: #a8a8a8;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--secondary-clr);
+}
+
+
+/* ------------------------------------------------------- */
+
+/* -------------  Media- Queries  ---------------------------- */
+
+@media (max-width: 768px) {
+    .hamburger-icon {
+        display: inline-block;
+        position: absolute;
+        top: 30px !important;
+        left: 270px !important;
+    }
+
+    .ul-content {
+        display: none;
+    }
+    ul {
+        top: 68px;
+        right: 0px;
+        width: 100%;
+        position: absolute;
+        display: block;
+        justify-content: none;
+        align-items: none;
+
+        background: var(--light-clr);
+        padding: 10px;
+    }
+    
+    ul li {
+        margin: 20px 10px;
+    }
+    
+    ul li a {
+        color: var(--secondary-clr);
+    }
+
+    ul li .login {
+        width: 160px;
+        border-radius: 30px;
+    }
+    ul li .login:hover {
+        background: var(--secondary-clr);
+        color: var(--white-clr);
+    }
+
+    .navbar input {
+        margin: 0 0 0 30px;
+        width: 260px;
+    }
+
+    /* -- course-menu-styling -- */
+
+    .nav__category {
+        display: none;
+    }
+
+    /* -----------hero-section----------- */
+    .h__content h1 {
+        font-size: 28px;
+    }
+
+    .nav__category {
+        /* border: 1px solid #000; */
+        margin-left: -10px;
+    }
+
+    /* ----------- banner----------- */
+    .banner {
+        margin-top: -20px;
+    }
+    .banner__box {
+        padding: 8px;
+    }
+    .trusted__box i {
+        padding: 12px;
+    }
+    .banner__box:nth-child(3) i {
+        margin-left: -20px !important;
+    }
+    .banner__box:nth-child(4) i {
+        margin-left: -12px !important;
+    }
+
+    /* ----- explore - courses --------- */
+
+    .explore__courses {
+        margin-top: -260px;
+        padding-top: 270px;
+    }
+
+    .tablink {
+        padding: 6px 10px;
+        margin: 10px;
+        width: 30%;
+    }
+
+    .tabcontent {
+        padding: 10px 20px 50px 20px;
+    }
+
+
+    /* --------- quic-styling ---------- */
+    .quic__content {
+        margin: 20px 0;
+    }
+    
+    .quic__overview {
+        flex-direction: column;
+    }
+    
+    .quic__box {
+        margin: 20px 30px;
+    }
+    .quic__box h1 {
+        font-weight: 750;
+        font-size: 32px;
+    }
+
+    .proud {
+        text-align: center;
+    }
+    
+    .proud h2 {
+        font-size: 26px;
+    }
+
+    /* --------- rankers-styling ---------- */
+
+    .person__details {
+        margin: 20px auto;
+    }
+    
+    .person__name {
+        /* border: 1px solid red; */
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* --------- get-app-styling ---------- */
+
+    .white__bg__get__app {
+        padding: 20px;
+    }
+    
+    .get__the__app {
+        margin: 40px auto;
+    }
+
+    .app__content h2 {
+        font-size: 24px;
+        margin-left: 24px;
+    }
+    .app__content h6 {
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    .app__buttons button {
+        width: 200px;
+    }
+    
+    .app__img img {
+        height: 270px;
+        margin-bottom: -70px;
+    }
+
+    /* ----- footer-styling ----------- */
+
+    .footer__left{
+        padding-right: 30px !important;
+        padding-left: 40px !important;
+    }
+
+    .footer__right{
+        padding-left: 16px !important;
+        padding-top: 50px;
+    }
+    .footer__boxes {
+        margin: 0px;
+        width: 50%;
+    }
+    .footer__boxes:nth-child(5) {
+        float: right;
+        margin-top: 20px;
+    }
+    .footer__boxes:nth-child(6) {
+        float: right;
+    }
+
+    .main__footer {
+        flex-direction: column;
+    }
+    .footer__date {
+        order: 2;
+    }
+
+    .social__media__links {
+        order: 1;
+        margin-bottom: 20px;
+    }
+    .social__media__links i {
+        margin: 0 10px;
+        color: #5c5c5c;
+    }
+    
+
+}
