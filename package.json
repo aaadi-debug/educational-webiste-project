@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/index.js -e js,hbs"
   },
-  "author": " Aditya Raj Gupta",
+  "author": "Aditya Raj Gupta",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.2.0",
